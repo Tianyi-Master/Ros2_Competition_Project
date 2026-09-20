@@ -1,0 +1,22 @@
+# 话题名映射（默认值）。每个节点的 image_topic / result_topic 参数都可被
+# launch 文件覆盖，本文件仅作为文档化的默认约定。
+
+camera_rgb: /camera/image_raw
+camera_thermal: /thermal/image_raw
+scan: /scan
+odom: /odom
+imu: /imu
+
+perception:
+  traffic_light: /perception/traffic_light
+  crowd: /perception/crowd
+  bin_status: /perception/bin_status
+  fire: /perception/fire
+  license_plate: /perception/license_plate
+  temperature: /perception/temperature
+  meter: /perception/meter
+  ev_status: /perception/ev_status
+  alert: /perception/alert
+
+mission:
+  state: /mission/state

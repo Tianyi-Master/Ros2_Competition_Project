@@ -1,0 +1,22 @@
+# 导航与传感器话题默认命名（与 perception/config/topics.yaml 保持一致）。
+# 供 launch 文件 remap 参考，实际 remap 在各自 launch 中完成。
+
+sensors:
+  scan: /scan
+  odom: /odom
+  imu: /imu
+  camera_rgb: /camera/image_raw
+  camera_thermal: /thermal/image_raw
+
+navigation:
+  map: /map
+  cmd_vel: /cmd_vel
+  amcl_pose: /amcl_pose
+  navigate_to_pose: /navigate_to_pose
+  follow_waypoints: /follow_waypoints
+
+frames:
+  map: map
+  odom: odom
+  base_link: base_link
+  base_footprint: base_footprint

@@ -1,0 +1,7 @@
+# 定义位置泊车点（地图坐标系）。
+# 每个点：name / x / y / yaw（弧度）。由 mission_controller/parking.py 读取。
+# TODO: 按实际场地标定坐标。
+
+waypoints:
+  - {name: "charging_station", x: 0.0, y: 0.0, yaw: 0.0}
+  - {name: "home", x: 1.0, y: 0.0, yaw: 0.0}

@@ -1,0 +1,41 @@
+# 每个感知任务的模型权重路径 / 置信度阈值 / 类别名。
+# 权重路径留空 "" 表示占位（stub 模式，不加载模型）。
+# 实现推理时把实际 .pt/.onnx 权重路径填到对应 model_path。
+
+traffic_light:
+  model_path: ""
+  confidence_threshold: 0.5
+  classes: ["red", "yellow", "green"]
+
+crowd:
+  model_path: ""
+  confidence_threshold: 0.4
+  classes: ["person"]
+
+bin_status:
+  model_path: ""
+  confidence_threshold: 0.5
+  classes: ["trash_bin_empty", "trash_bin_full"]
+
+fire:
+  model_path: ""
+  confidence_threshold: 0.4
+  classes: ["smoke", "flame"]
+
+license_plate:
+  model_path: ""
+  confidence_threshold: 0.5
+  classes: ["license_plate"]
+
+temperature:
+  threshold_celsius: 60.0
+
+meter:
+  model_path: ""
+  confidence_threshold: 0.5
+  unit: ""
+
+ev_status:
+  model_path: ""
+  confidence_threshold: 0.5
+  classes: ["ev_upright", "ev_fallen", "ev_illegal_parking"]

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>inspection_bringup</name>
+  <version>0.0.0</version>
+  <description>Launch files and configuration for the inspection robot (perception, mission, Nav2 SLAM/AMCL, parking).</description>
+  <maintainer email="tianyimaster@todo.todo">tianyimaster</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- Optional runtime deps (templates used once Nav2 / slam_toolbox are
+       installed; not required for the perception/mission launch files):
+       slam_toolbox, nav2_bringup, nav2_map_server, nav2_amcl,
+       nav2_controller, nav2_planner, nav2_behaviors, nav2_bt_navigator,
+       nav2_waypoint_follower, nav2_velocity_smoother, nav2_lifecycle_manager. -->
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

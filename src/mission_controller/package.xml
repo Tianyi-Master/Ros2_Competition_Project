@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>mission_controller</name>
+  <version>0.0.0</version>
+  <description>Patrol mission state machine and defined-position parking (Nav2) for the inspection robot.</description>
+  <maintainer email="tianyimaster@todo.todo">tianyimaster</maintainer>
+  <license>Apache-2.0</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>inspection_interfaces</depend>
+
+  <!-- Optional runtime deps: only needed when Nav2 is installed and parking
+       is enabled. parking.py guards the import, so the package still runs
+       without them. -->
+  <exec_depend>nav2_msgs</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
